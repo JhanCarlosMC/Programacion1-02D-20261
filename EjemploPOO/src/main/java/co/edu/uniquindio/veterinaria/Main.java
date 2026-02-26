@@ -7,6 +7,13 @@ public class Main {
     public static void main(String[] args) {
         Veterinaria newVeterinaria = new Veterinaria("12-0", "Animales Felices", "La plaza");
 
-        System.out.println(newVeterinaria.buscarPropietarioByCedula("1234"));;
+        System.out.println(newVeterinaria.buscarPropietarioByCedula("1234"));
+
+        newVeterinaria.registrarPropietario(
+                "1234", "jhan",
+                "la casa", "311");
+
+        System.out.println(newVeterinaria.buscarPropietarioByCedula("1234"));
+
     }
 }

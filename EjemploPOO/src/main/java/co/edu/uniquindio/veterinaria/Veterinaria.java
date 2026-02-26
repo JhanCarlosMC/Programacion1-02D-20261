@@ -18,11 +18,20 @@ public class Veterinaria {
 
     //Metodos CRUD propietario
     //Create - Crear/Registrar/Guardar propietarios
-//    public boolean registrarPropietario(String cedula, String nombre, String direccion, String numeroContacto){
-//
-//
-//    }
+    public boolean registrarPropietario(String cedula, String nombre, String direccion, String numeroContacto){
+        Propietario nuevoPropietario = new Propietario(cedula, nombre, numeroContacto, direccion);
 
+        if(buscarPropietarioByCedula(cedula) == -1){
+            for(int i = 0; i<listPropietarios.length; i++){
+                if(listPropietarios[i] == null){
+                    listPropietarios[i] = nuevoPropietario;
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
     public int buscarPropietarioByCedula(String cedulaBuscar){
 
         for(int i = 0; i<listPropietarios.length; i++){
