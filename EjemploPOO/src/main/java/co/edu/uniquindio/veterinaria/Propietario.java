@@ -13,6 +13,15 @@ public class Propietario {
         this.nombre = nombre;
         this.numeroContacto = numeroContacto;
         this.direccion = direccion;
+        listMascotas = new Mascota[10];
+    }
+
+    public void setMascota(Mascota newMascota){
+        for (int i = 0; i < listMascotas.length; i++) {
+            if (listMascotas[i] == null) {
+                this.listMascotas[i] = newMascota;
+            }
+        }
     }
 
     public String getCedula() {

@@ -14,15 +14,12 @@ public class Mascota {
 
     //Contructor
     public Mascota(String id, String nombre, int edad,
-                   String raza, String especie, String nombrePropietario,
-                   String numeroContacto) {
+                   String raza, String especie) {
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
         this.raza = raza;
         this.especie = especie;
-        this.nombrePropietario = nombrePropietario;
-        this.numeroContacto = numeroContacto;
     }
 
     //Getters y Setters
