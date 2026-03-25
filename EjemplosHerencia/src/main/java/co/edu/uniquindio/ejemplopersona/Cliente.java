@@ -9,6 +9,11 @@ public class Cliente extends Persona{
         this.telefono = telefono;
         this.direccion = direccion;
     }
+    public Cliente(String telefono, String direccion) {
+        super();
+        this.telefono = telefono;
+        this.direccion = direccion;
+    }
 
     public String getTelefono() {
         return telefono;
